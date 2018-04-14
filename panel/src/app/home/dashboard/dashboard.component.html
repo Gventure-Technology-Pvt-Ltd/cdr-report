@@ -2,6 +2,15 @@
     <widget-group [data]="widgetdata"></widget-group>
 </div>
 
+<div width="100%">
+    <mat-grid-list cols="4">
+        <mat-grid-tile><bar-widget></bar-widget></mat-grid-tile>
+        <mat-grid-tile><line-widget></line-widget></mat-grid-tile>
+        <mat-grid-tile><point-widget></point-widget></mat-grid-tile>
+        <mat-grid-tile><line-widget></line-widget></mat-grid-tile>
+    </mat-grid-list>
+</div>
+
 <google-chart [data]="pieChartData"></google-chart>
 <google-chart [data]="lineChartData"></google-chart>
 <google-chart [data]="comboChartData"></google-chart>

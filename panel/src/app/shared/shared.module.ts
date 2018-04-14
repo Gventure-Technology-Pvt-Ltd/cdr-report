@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { MenuItems } from '../menu-items';
 import { DemoMaterialModule } from '../demo-material-module';
 import { AccordionAnchorDirective, AccordionLinkDirective, AccordionDirective } from './accordion';
@@ -15,13 +16,17 @@ import { KeysPipe } from './data-table/keypipe/keypipe';
 import { SearchPipe } from './data-table/keypipe/searchpipe';
 import { FormdetailComponent } from './formdetail/formdetail.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { BarWidgetComponent } from './widget/bar-widget/bar-widget.component';
+import { LineWidgetComponent } from './widget/line-widget/line-widget.component';
+import { PointWidgetComponent } from './widget/point-widget/point-widget.component';
 
 @NgModule({
   imports:[
     CommonModule,
     RouterModule,
     DemoMaterialModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   declarations: [
     AccordionAnchorDirective,
@@ -35,7 +40,10 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     KeysPipe,
     SearchPipe,
     FormdetailComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    BarWidgetComponent,
+    LineWidgetComponent,
+    PointWidgetComponent
   ],
   exports: [
     AccordionAnchorDirective,
@@ -47,7 +55,10 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     WidgetGroupComponent,
     DataTableComponent,
     FormdetailComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    BarWidgetComponent,
+    LineWidgetComponent,
+    PointWidgetComponent
    ],
   providers: [ MenuItems, TitleNavigationService ]
 })

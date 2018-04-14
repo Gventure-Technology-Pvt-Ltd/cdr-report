@@ -1,0 +1,20 @@
+<div class="card text-white bg-info">
+  <div class="card-body pb-0">
+    <button type="button" class="btn btn-transparent p-0 float-right">
+      <i class="icon-location-pin"></i>
+    </button>
+    <h4 class="mb-0">9.823</h4>
+    <p>Members online</p>
+  </div>
+  <div class="chart-wrapper px-3" style="height:70px;">
+    <canvas baseChart class="chart"
+      [datasets]="lineChart3Data"
+      [labels]="lineChart3Labels"
+      [options]="lineChart3Options"
+      [colors]="lineChart3Colours"
+      [legend]="lineChart3Legend"
+      [chartType]="lineChart3Type"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>

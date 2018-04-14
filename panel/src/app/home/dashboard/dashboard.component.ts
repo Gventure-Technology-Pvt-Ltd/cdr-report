@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WidgetGroupComponent } from '../../shared/widget-group/widget-group.component';
 import { HomeService } from '../home.service';
+import { BarWidgetComponent } from '../../shared/widget/bar-widget/bar-widget.component';
 import { Router } from '@angular/router';
 
 @Component({
