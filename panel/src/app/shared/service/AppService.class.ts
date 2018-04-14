@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient }   from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { APIURL } from '../../app.routing';
 import { Option } from '../model/model.class';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { serializePath } from '@angular/router/src/url_tree';
+import { environment } from '../../../environments/environment';
+
+export const APIURL=environment.APPURL;
 
 export class AppService<T> {
     protected appmod : string;
     protected data : T;
     protected action : string;
-
     public service_data = new BehaviorSubject<T>(null);
     public solution= this.service_data.asObservable();
 

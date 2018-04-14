@@ -6,7 +6,7 @@ import { trigger, transition, query, style, animate, stagger, keyframes, state }
 @Component({
   selector: 'app-extension',
   templateUrl: './extension.component.html',
-  styleUrls: ['./extension.component.css'],
+  styleUrls: ['./extension.component.scss'],
   animations: [
     trigger('flyInOut', [
       state('in', style({transform: 'translateX(0)'})),
@@ -20,6 +20,7 @@ import { trigger, transition, query, style, animate, stagger, keyframes, state }
     ])
   ]
 })
+
 export class ExtensionComponent implements OnInit {
   state:boolean;
   
