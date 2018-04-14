@@ -1,13 +1,29 @@
 {
-  "name": "gventure",
+  "name": "Gventure Asterisk Solutions",
   "version": "1.0.0",
-  "description": "",
+  "description": "Comprehensive report
+  • Extension summary reports. 
+  • Extension outgoing cost reports. 
+  • Extension detail reports with budget usage (if budget assigned).
+  • Department/group summary reports. 
+  • Department/group detail reports.
+  • Top 20/40 reports by:
+  >Cost - most expensive calls
+  >Duration - 20 longest calls
+  >Number dialled - most-dialled numbers
+  
+  •Calls exceeding a certain length of time (e.g. > 10 minutes or > 20.00)
+  • Account code reports 
+  • Graphs
+  >Busy hour graph.
+  > History graph.
+  >Monthly total summary reports",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "VIKAS KUMAR",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.3"
   }
